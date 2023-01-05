@@ -1,0 +1,123 @@
+{"intents": [
+  {"tag": "greeting",
+    "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "greetings", "Sup", "What's up", "What's good"],
+    "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+    "context_set": ""
+  },
+  {"tag": "goodbye",
+    "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya"],
+    "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+    "context_set": ""
+  },
+  {"tag": "stocks",
+    "patterns": ["I want to look at a stock","I want to enter a stock","I want to analyze a stock", "How can I look at a stock", "What stocks can I look at?", "I need to look at a stock"],
+    "responses": ["Ticker Symbol"],
+    "context_set": ""
+  },
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "Glooks"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure", "You got it"],
+    "context": [""]
+  },
+  {"tag": "options",
+    "patterns": ["How you could help me?","What are your functions","What are your functionalities", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+    "responses": ["I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Analyze the RSI of stock prices and predicting its next day price \n 3. For suggestions to help me improve, contact Dowens "],
+    "context": [""]
+  },
+  {"tag": "jokes",
+    "patterns": ["Tell me a joke", "Joke", "Make me laugh"],
+    "responses": ["Today, I asked my phone 'Siri, why am I still single?' and it activated the front camera", "Why does a midget always laugh when they run? Because their balls are too close to the grass", "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.", "My mom died when we couldn’t remember her blood type. As she died, she kept telling us to 'be positive,' but it’s hard without her,", "You know you’re ugly when you get handed the camera every time they take a group photo.", "My grandfather said my generation relies too much on the latest technology. So I unplugged his life support.", "How many emo kids does it take to screw in a lightbulb? None, they all sit in the dark and cry", "They laughed at my crayon drawing. I laughed at their chalk outline.", "I made a website for orphans. It doesn’t have a home page.", "I'll never forget my Grandfather’s last words to me just before he died. \"Are you still holding the ladder?", "What did the woman with no hands get for Christmas? No idea. She hasn’t opened her present yet"],
+    "context": ["jokes"]
+  },
+  {"tag": "Identity",
+    "patterns": ["Who are you", "what are you"],
+    "responses": ["I am NACCI's personal assistant", "I'm just a personal assistant, how can I help you?"]
+  },
+  {"tag": "haha",
+    "patterns": ["haha", "lol", "rofl", "lmao", "thats funny"],
+    "responses": ["I knew I could make you laugh", "I know, I know im funny", "I'm on a roll", "I got jokes for days"]
+  },
+  {"tag": "programmer",
+    "patterns": ["Who made you", "who designed you", "who programmed you"],
+    "responses": ["I was made by NACCI", "NACCI, my creator"]
+  },
+  {"tag": "insult",
+    "patterns": ["you are dumb", "shut up", "idiot"],
+    "responses": ["Your mom's a hoe"]
+  },
+  {"tag": "activity",
+    "patterns": ["what are you doing", "what are you upto"],
+    "responses": ["Talking to you, obviously"]
+  },
+  {"tag": "exclaim",
+    "patterns": ["Awesome", "Great", "I know", "ok", "yeah"],
+    "responses": ["Yeah"]
+  },
+  {"tag": "riddle",
+    "patterns": ["Ask me a riddle", "Ask me a question", "Riddle"],
+    "responses": ["What two things can you never eat for breakfast?.....Lunch and Dinner!", "What word is spelled incorrectly in every single dictionary?.....Incorrectly", " How can a girl go 25 days without sleep?.....She sleeps and night!", "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!", " What will you actually find at the end of every rainbow?.....The letter 'w'", "What can be caught but never thrown?.....A cold!", "What has a thumb and four fingers but is not actually alive?.....Your Gloves!", " What 5-letter word becomes shorter when you add two letters to it?.....Short", "Why can't a bike stand on it's own?.....It is two-tired."],
+    "context": ["riddles"]
+  },
+  {"tag": "age",
+    "patterns": ["how old are you","when were you made","what is your age"],
+    "responses": ["I was born yesterday", "Im as old as you want me to be", "Im fresh out the womb of Dowens' mind"]
+  },
+  {"tag": "no",
+    "patterns": ["no", "nope", "nah"],
+    "responses": ["ok"]
+  },
+  {"tag": "nicetty",
+    "patterns": ["it was nice talking to you", "good talk"],
+    "responses": ["It was nice talking to you as well! Come back soon!"]
+  },
+  {"tag": "appreciate",
+    "patterns": ["You are awesome", "you are the best", "you are great", "you are good"],
+    "responses": ["Thanks", "Glooks"]
+  },
+  {"tag": "Account format",
+    "patterns": ["Why is my account in the format of [firstintial+lastname+number] rather than [firstname.lastname] or [firstinitial+lastname+number+.student]?", "Why is my username [firstinitial+lastname+number] instead of [firstname.lastname] or [firstinitial+lastname+number+.student]?", "Why is the format for my account [firstinitial+lastname+number] instead of [firstname.lastname] or [firstinitial+lastname+number+student]?", "Why does my account use [firstinitial+lastname+number] rather than [firstname.lastname] or [firstinitial+lastname+number+student]?"],
+    "responses": [" We've adopted a new standard naming convention. Accounts that were created before the new naming convention will remain intact and will function as they should. All new accounts (faculty, administrators, staff, students, etc.) going forward will follow the new standard naming convention: [firstintial+lastname+number].\n\nIf you would like to set up an alias for your account, please send an email to its@manhattan.edu and we will forward your request to the appropriate group for processing. \n\nHint: This can only be done for employees."]
+  },
+  {"tag": "Trouble logging into account",
+    "patterns": ["I'm having trouble logging into my account", "I can't log into my account", "I'm having trouble accessing my account", "I'm having difficulty accessing my account", "Logging into my account is giving me problems"],
+    "responses":["If you are experiencing strange behavior when attempting to log in to the portal, please try closing the browser down completely and then logging in to a JasperNet service by typing in your JasperNet ID in all lowercase. For example, if you logged in as \"Training.User1\" you might have trouble logging into the Portal, but if you log in as \"training.user1\" (in all lowercase) you shouldn't have any issues.\n\nIf you have any further trouble, please contact us at ITS@manhattan.edu or (718) 862-7973."]
+  },
+  {"tag": "How to Update Your Personal Email",
+    "patterns":["My personal email address, which the school has on file, needs to be changed.", "My personal email address, which the school has on file, needs to be changed.", "I wish to update the personal email address that the school has on file for me", "I'd like to change my personal email address on file with the school","I'd like to update the school's record of my personal email address." ],
+    "responses": ["Please visit the Self Service Email Page to access the page that allows you to update your personal email address.\n If an email shows up under \"Personal Email Address\", click on that email. Follow the same rule for the \"Parent\" email addresses. \nIf \"Personal Email Address\" does not come up, select \"Personal Email Address\" from the drop down next to \"Type of E-mail to Insert\".\n Then click the \"Submit\" button. Please follow the same instructions if \"Parent\" email does not come up. \nNote that you must only enter one email in each email field.\n\nType your email in the field that states \"URL\".\nNote that you must only enter one email in each email field.\n\n"]
+  },
+  {"tag": "Account Access",
+    "patterns": ["How long do I get to keep access to my account?", "How long do I have access to my account?", "How long will I have access to my account?", "How long can I keep my account?", "How long am I allowed to keep my account?", "How long do I have access to my account?"],
+    "responses": ["As a student, your account will be kept for one year from the last time you were registered for classes."]
+  },
+  {"tag": "Student & Work Accounts",
+    "patterns": ["If I work here and I am also a student, do I need two accounts?", "Do I get two accounts if im a student-worker?", "Do I need two accounts if I work here and am a student?", "Do student workers need two accounts?"],
+    "responses": ["People at Manhattan College only have one account associated with them. If you are a student and you begin to work here or vice versa, then your account will be updated accordingly."]
+  },
+  {"tag": "Free Duo App",
+    "patterns": ["Is the Duo app free?", "Is the Duo app free to use?", "Is the Duo app available for free?"],
+    "responses": ["Yes! There is no cost associated with downloading Duo."]
+  },
+  {"tag": "Duo Opt out",
+    "patterns": ["Can I opt out of Duo?", "Is it possible to opt out of Duo?", "Is it possible for me to opt out of Duo?"],
+    "responses": ["No. Once you are enrolled in Duo there is no way to opt out."]
+  },
+  {"tag": "MFA Difficulty",
+    "patterns": ["Is MFA hard?", "How hard is it set set up MFA?", "How hard is it to setup MFA", "Is MFA difficult?", "Is MFA challenging?" ],
+    "responses": ["No.  The majority of employees that have enabled MFA have provided feedback indicating that it was much easier than expected."]
+
+  },
+  {"tag": "Duo Enable Push Notifications",
+    "patterns": ["Why enable Push notifications?", "Why should you enable Push notifications?", "Why should Push notifications be enabled?", ""],
+    "responses": ["Enabling push notifications is easier, quicker, and more secure than receiving a text message or phone call."]
+  },
+  {"tag": "Using  Duo for MFA",
+    "patterns": ["Why do I have to use Duo for MFA?", "Why am I required to use Duo for MFA?", "Why must I use Duo for MFA?"],
+    "responses": ["Using MFA ensures that sensitive information is protected when you access services such as Banner.\n It does this by requiring a secondary means of allowing access to your account such as a cell phone, tablet, security key.\n Using Duo negates the need for VPN and will allow usage of Banner and other services that require you to be hard wired to the College's network."]
+  },
+  {"tag": "",
+    "patterns": [""],
+    "responses": [""]
+  }
+]
+}
